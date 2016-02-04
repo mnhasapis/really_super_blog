@@ -11,7 +11,7 @@
         <%= link_to blog_post.title, blog_post %>
         </div>
         <div class="panel-body">
-        by <%= blog_post.author %>
+        by <%= blog_post.user.username %>
         at <%= blog_post.created_at.strftime('%m/%d/%Y %H:%M:%S') %>
         <p><%= blog_post.blog_entry[0..150] %>...
         <%=link_to "Read more...#{blog_post.title}", blog_post %></p>
